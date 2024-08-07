@@ -6,5 +6,5 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react()],
-  site: 'https://hairspace.gitlab.io',
+  site: 'https://hairspaceprg.github.io',
 });
