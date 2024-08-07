@@ -1,0 +1,83 @@
+---
+import bg_services from "../images/1.jpg";
+import experience_ico from "../images/icons/experience.svg";
+import customers from "../images/icons/review.svg";
+import designs from "../images/icons/scissors.svg";
+import service2 from "../images/Haircut2.jpg"
+import service1 from "../images/Haircut3,1.jpg"
+import servicecard from "../images/Haircut4.jpg"
+import { fade } from "astro:transitions";
+---
+
+
+<section id="services" class="relative w-full flex h-full flex-col items-center justify-center ">
+    <img src={bg_services.src} alt="lismy hero" class="absolute h-full w-full object-cover opacity-20">
+    <div 
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        class="relative bg-white flex lg:flex-row flex-col items-center justify-between text-center p-8 w-full lg:w-3/5 lg:rounded-3xl shadow-md lg:-mt-20 max-w-[920px] ">
+        <div class="flex flex-col items-center justify-center space-y-2 lg:w-1/3 p-2">
+            <img src={experience_ico.src} alt="experience icon" class="h-10" />
+            <span class="text-gray-500 text-lg font-semibold">+20 LET ZKUŠENOSTÍ</span>
+        </div>
+        <div class="flex flex-col items-center justify-center lg:border-y-0 space-y-2 py-2 lg:border-x-2 border-y-2 border-gray-400 lg:w-1/3 mb-2 lg:mb-0">
+            <img src={customers.src} alt="customers icon" class="h-10"/>
+            <span class="text-gray-500 text-lg font-semibold">100% SPOKOJENÍ ZÁKAZNÍCI</span>
+        </div>
+        <div class="flex flex-col items-center justify-center space-y-2 lg:w-1/3 p-2">
+            <img src={designs.src} alt="customers icon" class="h-10"/>
+            <span class="text-gray-500 text-lg font-semibold">JEDINEČNÉ A DOKONALÉ ÚČESY </span>
+        </div>
+    </div>
+
+    <div class="relative flex flex-col gap-10 md:gap-20 items-center text-justify  justify-center   w-full lg:w-3/5 pb-16 max-w-[920px]">
+        <h1 
+            data-aos="fade-down"
+            data-aos-anchor-placement="center-bottom" 
+            class="text-3xl text-black-500 font-semibold lg:mt-20 mt-8">Co vám nabízíme?
+        </h1>
+        <div 
+            data-aos="fade-right"
+            data-aos-anchor-placement="center-bottom" 
+            class="flex flex-col lg:flex-row justify-between gap-4">
+            <img src={service2.src} alt="manicure services" class="p-2 h-full ">
+            <div class="relative flex flex-col space-y-2 justify-center items-center lg:items-start px-10" >
+                <h1 class="text-2xl font-semibold text-gray-500">STŘÍHÁNÍ, STYLING, BARVENÍ VLASŮ</h1>
+                <p class="text-gray-600 font-medium text-xl">Připraveni zazářit s vašimi vlasy? V našem útulném kadeřnickém salonu vám nabízíme prostor, kde se kreativita a osobní péče setkávají, aby vdechly život vašim vlasům. Přijďte a objevte širokou škálu služeb a nejnovější trendy barvy s nejodvážnějšími střihy. Nečekejte déle, rezervujte si svůj termín ještě dnes a připravte se upoutat všechny pohledy!</p>
+                <a href="https://www.fresha.com/book-now/hairspace-prg-nud8de8u/services?lid=1354994&pId=1286714" target= "_blank">
+                    <button class="text-gray-500 p-2 border-2 border-black-500 w-36 rounded-2xl text-lg font-semibold hover:scale-105 hover:text-white hover:bg-pink-500 transition ">Rezervovat</button>
+                </a>
+            </div>
+        </div>
+        <div 
+            data-aos="fade-left"
+            data-aos-anchor-placement="center-bottom" 
+            class="flex flex-col-reverse lg:flex-row justify-between gap-4">
+            <div class="flex flex-col space-y-2 justify-center items-center lg:items-start px-10" >
+                <h1 class="text-2xl font-semibold text-gray-500">Nejlepší péče o vaše vlasy</h1>
+                <p class="text-gray-600 font-medium text-xl">Ahoj! Jsme vaši odborníci na péči a krásu vlasů, kteří vám nabízejí nejen výjimečné služby, ale také komplexní ošetření, aby vaše vlasy zůstaly zdravé a krásné. Při každém sezení používáme pokročilé techniky a kvalitní přírodní produkty, které pečují a zkrášlují vaše vlasy. Naším cílem je zajistit, aby každý detail odrážel styl i zdraví, abyste měli vždy dokonalé vlasy.
+
+
+
+
+
+
+                </p>
+                
+            </div>
+            <img src={service1.src} alt="manicure services" class="p-2 h-full">
+        </div>
+        <div 
+            data-aos="fade-right"
+            data-aos-anchor-placement="center-bottom" 
+            class="flex flex-col lg:flex-row  justify-between gap-4">
+            <img src={servicecard.src} alt="manicure services" slot="left" class="p-2 h-full">
+            <div class="flex flex-col space-y-2 justify-center items-center lg:items-start px-10">
+                <h1 class="text-2xl font-semibold text-gray-500">Neuvěřitelné účesy!</h1>
+                <p class="text-gray-600 font-medium text-xl">Objevte naši kolekci úžasných účesů, které vás ohromí svou originalitou a kreativitou. Od elegantních, minimalistických střihů až po výrazné, poutavé styly – pro každého máme něco. Každý účes je jedinečným vyjádřením umění a módy, pečlivě vytvořený tak, aby zvýraznil vaši přirozenou krásu a doplnil váš osobní styl. Dovolte nám pozvednout váš vzhled pomocí našich exkluzivních vlasových vzorů!</p>
+                <button class="p-2 border-2 border-black-500 w-36 rounded-2xl text-lg font-semibold text-gray-500 hover:scale-105 hover:text-white hover:bg-pink-500 transition ">Galerie</button>
+            </div>
+        </div>
+    </div> 
+    
+</section>
